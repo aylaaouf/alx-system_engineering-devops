@@ -1,4 +1,4 @@
-# This Puppet Create The School File
+# This Puppet script creates the School file
 file { '/tmp/school':
   ensure  => 'present',
   mode    => '0744',
@@ -6,4 +6,5 @@ file { '/tmp/school':
   group   => 'www-data',
   content => 'I love Puppet',
   path    => '/tmp/school',
-}  
+}
+
